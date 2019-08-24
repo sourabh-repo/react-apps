@@ -34,12 +34,66 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 - Fast and Responsive
 - Simple model to compose components
-- They can render in client and server i.e. Isomporphic
 - Use Virtual DOM to render
+
+  - Updating DOM is expensive, hence react update the DOM when state changes.
+  - Isomorphic i.e. enables client as well as server side rendering with React Native.
+
 - Unidirection data flow
+- It uses `HTML in JavaScript` whereas Angular uses `JavaScript in HTML`
 - Embeded Javascript and style i.e. JSX
+
   - HTML with JavaScript
+  - Strict compile time checking
   - Babel Transpile it to JavaScript
+  - className instead of class
+  - supports inline style with camel-case properties.
+
+- 4 Ways to create React Component
+
+  - Create Class
+  - ES Class
+  - Function
+  - Arrow Function
+
+- Benefits of Functional Components
+
+  - Easy to Understand
+  - Avoid `this` Keyword
+  - Less transpiled keyword
+  - Enhance code compilation & IntelliSense
+  - Easy to Use and Better Performance
+
+- React Fragments or `<></>`: This can be used to wrap a react component without rendering anything.
+
+##### Prop and State
+
+- Prop
+  - Data passed from parent component
+  - Looks like HTML attributes
+  - immutable, to change need to use a callback method of parent
+- State
+  - mutable i.e. data changes
+  - use setState to set value in state
+
+##### Lifecycle methods
+
+- [React class lifecycle methods](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
+
+##### React [Hooks](https://reactjs.org/docs/hooks-intro.html)
+
+- Use functional component for everything
+- Support lifecycle methods expect ComponentDidCatch
+- UseState for local State
+- useReducer
+- useEffect- side effect (can be used as componentDidMount, componentDidUpdate and componentDidUnmount)
+  - use Second parameter to stop the control when to execute the effect
+- useContext - access data in context
+- Can't declare a hook in if statement or loop it should be declared at top level
+
+##### PropTypes
+
+- [React PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
 #### React Router
 
@@ -48,8 +102,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 #### Flux
 
 - Unidirection data flow
-
-#### JSX
 
 ## Learn More
 
