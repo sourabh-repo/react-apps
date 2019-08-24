@@ -30,7 +30,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Notes
 
-#### React
+### React
 
 - Fast and Responsive
 - Simple model to compose components
@@ -66,21 +66,22 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 - React Fragments or `<></>`: This can be used to wrap a react component without rendering anything.
 
-##### Prop and State
+#### Prop and State
 
 - Prop
   - Data passed from parent component
   - Looks like HTML attributes
   - immutable, to change need to use a callback method of parent
+  - [React PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 - State
   - mutable i.e. data changes
   - use setState to set value in state
 
-##### Lifecycle methods
+#### Lifecycle methods
 
 - [React class lifecycle methods](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
 
-##### React [Hooks](https://reactjs.org/docs/hooks-intro.html)
+### React [Hooks](https://reactjs.org/docs/hooks-intro.html)
 
 - Use functional component for everything
 - Support lifecycle methods expect ComponentDidCatch
@@ -91,15 +92,11 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 - useContext - access data in context
 - Can't declare a hook in if statement or loop it should be declared at top level
 
-##### PropTypes
-
-- [React PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
-
-#### React Router
+### React Router
 
 - Simple easy way to route in client side
 
-#### Flux
+### Flux
 
 - Unidirection data flow
 
