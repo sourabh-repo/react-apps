@@ -95,10 +95,28 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### React Router
 
 - Simple easy way to route in client side
+- Router: wrap app entry point
+  - HasRouter: uses # in URL
+  - BrowserRouter: uses / in URL
+  - MemoryRouter: no change in URL
+- Route: load the component based on the url
+- Link: Anchor
+- Switch use to load the matched component to URL
+- Redirect is used to redirect pages to a new page
+- use exact prop to match the exact url in Route
+- Use Link or NavLink are use to add Links
+- history, location and match are passed as props to Component loaded by Route
+- Prompt used to show dialog with message before leaving the page.
 
 ### Flux
 
 - Unidirection data flow
+- Centeralised dispatcher
+- 3 parts in Flux
+
+  - Action: Encapsulates events
+  - Dispatcher: central hub
+  - store: holds app state
 
 ## Learn More
 
