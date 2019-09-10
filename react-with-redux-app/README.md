@@ -159,7 +159,7 @@
   
      React :arrow_right: Action :arrow_right: Reducer :arrow_right: Store :arrow_right: React-Redux :arrow_down:
 
-     :arrow_up: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left:
+     :arrow_up: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left: :arrow_left:
   
 
 ### Development Enviroment Setup
