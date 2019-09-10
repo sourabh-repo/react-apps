@@ -81,6 +81,49 @@
  - Time-travel debugging
  - small package
 
+#### why redux is helpful?
+ - complex data flow.
+ - Inter-component communication
+ - Non-hierarchical data.
+ - Many actions
+ - Same data used in many places
+
+#### 3 core redux principles
+ - One immutable store
+    - dispatch(action)
+    - subscribe(listener)
+    - getState()
+    - replaceReducer(nextReducer) 
+ - Actions triggers changes
+ - Reducers return update states
+
+#### Flux VS Redux
+ - Uni-directional data flow, actions and stores
+ - Flux has multiple store which are flat and disconnected but redux has single store with hierarchical reducers
+
+#### Immutability
+ - Number, String, Boolean, Undefined and Null are Immutable
+ - Objects, Arrays and Functions are Mutable
+ - Immutable methods for copying objects {...myObj}, map, filter, reduce
+ - Spread operator i.e. {...} is shallow copy and didn't clone the nested object e.g. 
+    ```
+     const person = {name : 'sourabh', address :{ street: 12, state: 'CA' }}
+     const copyPerson =  { ...person }; It don't clone the nested address object! i.e. address is still same object
+     const copyPersonDeep = { ...person, address: {...person.address}};
+    ```
+  - Deep cloning is expensive, Is expensive as all data is not changed, and react causes full render in deep cloning
+  - Arrays push, pop and reverse makes the array mutable so clone before doing these operations
+  - Arrays map, reduce, filter, concat and spread are safe and doesn't create a mutable instance
+  - Immutability brings clarity to know which component updated states
+  - Immutability brings performance update, as states updated and injected as props
+  - Immutability warning by redux-immutable-state-invariant in devDependencies or libs like Immer, Immutable.js etc.
+
+#### Reducer
+  - Takes a state and action and returns and new state
+  - Reducer should be pure function i.e. never mutate arguments, no api call or side effects and no non-pure method call(e.g. Date.now(), Math.random())
+  - Reducers should handle its own slice of data.
+
+
 ### Development Enviroment Setup
 
 #### Webpack 
