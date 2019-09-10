@@ -123,6 +123,44 @@
   - Reducer should be pure function i.e. never mutate arguments, no api call or side effects and no non-pure method call(e.g. Date.now(), Math.random())
   - Reducers should handle its own slice of data.
 
+### Connecting React to Redux
+
+| **Container Component**    | **Presentational Component**      |
+| ---------------------------| ----------------------------------|
+| Focus on how thing works   | Focus on how thing looks          |
+| Aware of Redux             | Unaware of Redux                  |
+| Subscribe to redux state   | Read data from props              |
+| Dispatch Redux action      | Invoke callback on props          |
+
+ - React-redux is used to connect react with redux
+  ```
+    <Provider store={this.props.state}>
+      <App />
+    </Provider>
+  ```
+  - connect method connects React to Redux state
+  - connect method Benefits compare to Flux
+    - No manual unsubscribe
+    - declare the subset of state needed
+    - Enhanced performance
+   ```
+    const mapStateToProps = state => {
+      return {
+        user: state.user
+      };
+    }
+    const mapDispatchToProps = {
+      getUser: getUser
+    }
+    export default connect(mapStateToProps, mapDispatchToProps)(ComponentName)
+   ```
+   - Data flow in React Redux
+    ```
+     React --> Action --> Reducer --> Store --> React-Redux --
+      ^                                                       |
+      |                                                       |
+      ---------------------------------------------------------
+    ```
 
 ### Development Enviroment Setup
 
