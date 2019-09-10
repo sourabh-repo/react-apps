@@ -154,13 +154,12 @@
     }
     export default connect(mapStateToProps, mapDispatchToProps)(ComponentName)
    ```
+
    - Data flow in React Redux
-    ```
-     React --> Action --> Reducer --> Store --> React-Redux --
-      ^                                                       |
-      |                                                       |
-      ---------------------------------------------------------
-    ```
+  
+     React :arrow_right: Action :arrow_right: Reducer :arrow_right: Store :arrow_right: React-Redux :arrow_down:
+                                                                                                    :arrow_down:
+  
 
 ### Development Enviroment Setup
 
